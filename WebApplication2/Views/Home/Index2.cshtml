@@ -1,0 +1,19 @@
+﻿@model WebApplication2.Models.FormModel
+@{
+    ViewData["Title"] = "Result";
+}
+
+<div class="text-left">
+    <h1 class="display-4">Wyświetlone imie</h1>
+    @for (int i = 0; i < Model.Repeat; i++)
+    {
+        <p> @Html.DisplayFor(model => model.Name)</p>
+
+
+    }
+
+
+
+
+</div>
+

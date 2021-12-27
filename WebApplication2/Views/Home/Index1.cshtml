@@ -1,0 +1,23 @@
+﻿@model WebApplication2.Models.FormModel
+@{
+    ViewData["Title"] = "Form-Create";
+}
+
+<h1 class="display-4">Formularz</h1>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-controller="Home" asp-action="Index1" method="post">
+
+            <label asp-for="Name" class="control-label"></label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+
+            <label asp-for="Repeat" class="control-label"></label>
+            <input asp-for="Repeat" class="form-control" />
+            <span asp-validation-for="Repeat" class="text-danger"></span>
+
+            <input type="submit" value="Zapisz" class="btn btn-primary" />
+
+        </form>
+    </div>
+</div>
